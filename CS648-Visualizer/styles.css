@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+#canvas-container {
+    position: relative;
+}
+
+#canvas {
+    border: 1px solid #000;
+    background-color: #fff;
+    position: relative; /* Ensure canvas is positioned relative to its container */
+    z-index: 1; /* Set a high z-index value to display the canvas above other elements */
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+button {
+    margin-top: 10px;
+}
+
+/* Styles for the input field */
+#delay-input {
+    margin-right: 10px; /* Add margin to separate from buttons */
+    padding: 5px; /* Add padding for better appearance */
+}
+
+/* Styles for buttons (just for reference) */
+#start-btn, #reset-btn, #final-btn {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
+
+
+header {
+    text-align: center;
+    max-width: 800px; /* Limiting width to 800px */
+    margin: 0 auto; /* Centering the header */
+    align-items: initial; /* Reset align-items */
+    justify-content: initial; /* Reset justify-content */
+}
+
+
+#instructions {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#instructions h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#instructions p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#instructions ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#instructions ul li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.blue {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.green {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: green;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.magenta {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: magenta;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.yellow {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.red {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+#background-points {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send background points behind canvas */
+}
+
+.point {
+    position: absolute;
+    border-radius: 50%;
+    width: 5px; /* Adjust point size */
+    height: 5px; /* Adjust point size */
+    /* Add some opacity to make points partially visible */
+    opacity: 0.8;
+}
+
+
+#large-circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+}
+
+#circle1 {
+    position:absolute;
+    width: 50em;
+    height: 50em;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 0, 0.5); /* Red circle with opacity */
+    transform: translate(-50%, -50%);
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid; /* Adjust border width as needed */
+}
